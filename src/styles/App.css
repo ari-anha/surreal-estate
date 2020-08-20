@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Open+Sans&display=swap");
+
+/* font-family: 'Crimson Text', serif;
+font-family: 'Open Sans', sans-serif; */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(155, 155, 155);
+}
+
 h2 {
-  color: orange;
+  color: white;
+  font-family: "Crimson Text", serif;
+  text-align: center;
 }
