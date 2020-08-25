@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Open+Sans&display=swap");
+
+/* font-family: 'Crimson Text', serif;
+font-family: 'Open Sans', sans-serif; */
+
+.navbar {
+  height: 50px;
+  color: white;
+  font-family: "Crimson Text", serif;
+  border-bottom: 3px solid white;
+}
+
+.navbar-links {
+  height: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links-item {
+  display: inline-block;
+  padding: 5px;
+  font-size: 16px;
+}
+
+a:link {
+  text-decoration: none;
+  color: red;
+}
+
+a:visited {
+  text-decoration: none;
+  color: green;
+}
+
+.icon {
+  font-size: 12px;
+}
+/*media query start*/
+@media screen and (min-width: 410px) {
+  .navbar-links-item {
+    font-size: 18px;
+  }
+  .icon {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .navbar-links-item {
+    font-size: 23px;
+  }
+  .icon {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .navbar-links-item {
+    font-size: 30px;
+  }
+  .icon {
+    font-size: 22px;
+  }
+}
+/*media query end*/
