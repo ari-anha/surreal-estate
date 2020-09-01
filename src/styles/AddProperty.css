@@ -2,3 +2,10 @@
 
 /* font-family: 'Crimson Text', serif;
 font-family: 'Open Sans', sans-serif; */
+
+.addProperty {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

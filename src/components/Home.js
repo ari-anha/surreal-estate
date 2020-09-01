@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="welcome">
       <h1>Welcome to Surreal Estate!</h1>
-      <p>Here you will find properties which are too good to be true.</p>
+      <p>Welcome message</p>
     </div>
   );
 };
