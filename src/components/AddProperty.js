@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../styles/AddProperty.css";
+import axios from "axios";
+import Alert from "./Alert";
 // import { GiFamilyHouse } from "react-icons/gi";
 
 const AddProperty = () => {
@@ -13,13 +15,36 @@ const AddProperty = () => {
       price: 0,
       email: "",
     },
+    alert: {
+      message: "",
+      isSuccess: false,
+    },
   };
 
   const [fields, setFields] = useState(initialState.fields);
+  const [alert, setAlert] = useState(initialState.alert);
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    console.log(fields);
+    setAlert({ message: "", isSuccess: false });
+
+    axios
+      .post("http://localhost:4000/api/v1/PropertyListing", fields)
+      .then((response) => {
+        setAlert({
+          message: "Property Added",
+          isSuccess: true,
+        });
+        console.log(response);
+      })
+      .catch((error) => {
+        setAlert({
+          message: "Server error. Please try again later.",
+          isSuccess: false,
+        });
+        console.log(error);
+      });
+    // console.log(fields);
   };
 
   const handleFieldChange = (event) => {
@@ -31,6 +56,7 @@ const AddProperty = () => {
     <div className="addProperty">
       <h2>Add a property page</h2>
       <p>Here we will be able to add new property information.</p>
+      <Alert message={alert.message} success={alert.isSuccess} />
       <form onSubmit={handleAddProperty}>
         <div>
           <label htmlFor="title">

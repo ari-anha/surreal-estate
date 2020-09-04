@@ -1,0 +1,11 @@
+.Alert {
+  border-radius: 15px;
+}
+
+.Alert.alert-success {
+  background-color: green;
+}
+
+.Alert.alert-error {
+  background-color: red;
+}

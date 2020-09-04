@@ -9,8 +9,8 @@ body {
   background-color: rgb(155, 155, 155);
 }
 
-h2 {
-  color: white;
+.title {
+  color: rgb(255, 0, 179);
   font-family: "Crimson Text", serif;
   text-align: center;
 }

@@ -10,7 +10,7 @@ import AddProperty from "./AddProperty";
 const App = () => {
   return (
     <div className="App">
-      <h2>Surreal Estate</h2>
+      <h2 className="title">Surreal Estate</h2>
       <NavBar />
       <Home />
       <Switch>
