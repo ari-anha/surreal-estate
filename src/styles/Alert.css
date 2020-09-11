@@ -1,5 +1,7 @@
 .Alert {
   border-radius: 15px;
+  width: 250px;
+  height: 80px;
 }
 
 .Alert.alert-success {
